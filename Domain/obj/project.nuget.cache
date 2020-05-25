@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "On03TfO/sfvp4QOUb65xAyowrEPdB4a/EIwAby4NsSra8eMM8rhXMFM4yfuCGUZVuswNsfbpemZ8hOEp/wnvFg==",
+  "dgSpecHash": "hSEdmw+NA5K8m5ypZKUoon+2HDuG/4uvegFJe6c0jDo37ET13olMABfcyFjp9VtQS4Iwh2iBRsCuD76RHcrvmw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Tung Le\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Tung Le\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
