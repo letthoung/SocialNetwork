@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Persistence\\Persistence.csproj": {}
+    "C:\\Users\\tle\\Desktop\\React+NetCore\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Domain\\Domain.csproj": {
+    "C:\\Users\\tle\\Desktop\\React+NetCore\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\tle\\Desktop\\React+NetCore\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Tung Le\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\tle\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tung Le\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tle\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -56,17 +56,17 @@
         }
       }
     },
-    "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\tle\\Desktop\\React+NetCore\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\tle\\Desktop\\React+NetCore\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\Tung Le\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Persistence\\obj\\",
+        "projectPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\tle\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tung Le\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tle\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,8 +79,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Domain\\Domain.csproj"
+              "C:\\Users\\tle\\Desktop\\React+NetCore\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\Domain\\Domain.csproj"
               }
             }
           }

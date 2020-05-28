@@ -10,3 +10,15 @@ C:\Users\Tung Le\Desktop\SocialNetwork\Persistence\obj\Debug\netstandard2.1\Pers
 C:\Users\Tung Le\Desktop\SocialNetwork\Persistence\obj\Debug\netstandard2.1\Persistence.csproj.CopyComplete
 C:\Users\Tung Le\Desktop\SocialNetwork\Persistence\obj\Debug\netstandard2.1\Persistence.dll
 C:\Users\Tung Le\Desktop\SocialNetwork\Persistence\obj\Debug\netstandard2.1\Persistence.pdb
+C:\Users\tle\Desktop\React+NetCore\Persistence\bin\Debug\netstandard2.1\Persistence.deps.json
+C:\Users\tle\Desktop\React+NetCore\Persistence\bin\Debug\netstandard2.1\Persistence.dll
+C:\Users\tle\Desktop\React+NetCore\Persistence\bin\Debug\netstandard2.1\Persistence.pdb
+C:\Users\tle\Desktop\React+NetCore\Persistence\bin\Debug\netstandard2.1\Domain.dll
+C:\Users\tle\Desktop\React+NetCore\Persistence\bin\Debug\netstandard2.1\Domain.pdb
+C:\Users\tle\Desktop\React+NetCore\Persistence\obj\Debug\netstandard2.1\Persistence.csprojAssemblyReference.cache
+C:\Users\tle\Desktop\React+NetCore\Persistence\obj\Debug\netstandard2.1\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\tle\Desktop\React+NetCore\Persistence\obj\Debug\netstandard2.1\Persistence.AssemblyInfoInputs.cache
+C:\Users\tle\Desktop\React+NetCore\Persistence\obj\Debug\netstandard2.1\Persistence.AssemblyInfo.cs
+C:\Users\tle\Desktop\React+NetCore\Persistence\obj\Debug\netstandard2.1\Persistence.csproj.CopyComplete
+C:\Users\tle\Desktop\React+NetCore\Persistence\obj\Debug\netstandard2.1\Persistence.dll
+C:\Users\tle\Desktop\React+NetCore\Persistence\obj\Debug\netstandard2.1\Persistence.pdb

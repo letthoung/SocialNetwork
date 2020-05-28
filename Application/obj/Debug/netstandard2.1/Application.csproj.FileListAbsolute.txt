@@ -12,3 +12,17 @@ C:\Users\Tung Le\Desktop\SocialNetwork\Application\obj\Debug\netstandard2.1\Appl
 C:\Users\Tung Le\Desktop\SocialNetwork\Application\obj\Debug\netstandard2.1\Application.csproj.CopyComplete
 C:\Users\Tung Le\Desktop\SocialNetwork\Application\obj\Debug\netstandard2.1\Application.dll
 C:\Users\Tung Le\Desktop\SocialNetwork\Application\obj\Debug\netstandard2.1\Application.pdb
+C:\Users\tle\Desktop\React+NetCore\Application\bin\Debug\netstandard2.1\Application.deps.json
+C:\Users\tle\Desktop\React+NetCore\Application\bin\Debug\netstandard2.1\Application.dll
+C:\Users\tle\Desktop\React+NetCore\Application\bin\Debug\netstandard2.1\Application.pdb
+C:\Users\tle\Desktop\React+NetCore\Application\bin\Debug\netstandard2.1\Domain.dll
+C:\Users\tle\Desktop\React+NetCore\Application\bin\Debug\netstandard2.1\Persistence.dll
+C:\Users\tle\Desktop\React+NetCore\Application\bin\Debug\netstandard2.1\Domain.pdb
+C:\Users\tle\Desktop\React+NetCore\Application\bin\Debug\netstandard2.1\Persistence.pdb
+C:\Users\tle\Desktop\React+NetCore\Application\obj\Debug\netstandard2.1\Application.csprojAssemblyReference.cache
+C:\Users\tle\Desktop\React+NetCore\Application\obj\Debug\netstandard2.1\Application.csproj.CoreCompileInputs.cache
+C:\Users\tle\Desktop\React+NetCore\Application\obj\Debug\netstandard2.1\Application.AssemblyInfoInputs.cache
+C:\Users\tle\Desktop\React+NetCore\Application\obj\Debug\netstandard2.1\Application.AssemblyInfo.cs
+C:\Users\tle\Desktop\React+NetCore\Application\obj\Debug\netstandard2.1\Application.csproj.CopyComplete
+C:\Users\tle\Desktop\React+NetCore\Application\obj\Debug\netstandard2.1\Application.dll
+C:\Users\tle\Desktop\React+NetCore\Application\obj\Debug\netstandard2.1\Application.pdb
