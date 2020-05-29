@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tle\\Desktop\\React+NetCore\\api\\API.csproj": {}
+    "C:\\Users\\tle\\Desktop\\React+NetCore\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tle\\Desktop\\React+NetCore\\api\\API.csproj": {
+    "C:\\Users\\tle\\Desktop\\React+NetCore\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tle\\Desktop\\React+NetCore\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\tle\\Desktop\\React+NetCore\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\api\\API.csproj",
+        "projectPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\API\\API.csproj",
         "packagesPath": "C:\\Users\\tle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\api\\obj\\",
+        "outputPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tle\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,6 +116,12 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

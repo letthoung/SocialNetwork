@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Mz4nrCGIo2RuP7Yk7c5YOR+P/l7t0tGlbfQKfeH78uSxr830+wBrp7C5WrwEyz5DR/MOshmPIL3OhJSjeixGoQ==",
+  "dgSpecHash": "NZ4k98jTS7DrDBT5YQXTbkbgqUTjX/QmceSCg24/oEEP0IPA7FwhZQlf8vLpWo5EYGEFGYjfzjBQNYI+bGESqA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tle\\Desktop\\React+NetCore\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\tle\\Desktop\\React+NetCore\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\tle\\.nuget\\packages\\mediatr\\8.0.0\\mediatr.8.0.0.nupkg.sha512",
+    "C:\\Users\\tle\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.0.0\\mediatr.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\tle\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\tle\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\tle\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
