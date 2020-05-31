@@ -13,16 +13,19 @@ interface IProps {
     setEditMode: (editMode: boolean) => void,
     setSelectedActivity: (selectedActivity: IActivity | null) => void,
     createActivity: (activity: IActivity) => void,
-    editActivity: (activity: IActivity) => void
+    editActivity: (activity: IActivity) => void,
+    deleteActivity: (id: string) => void
 }
 
 export const ActivitiesDashboard: React.FC<IProps> = 
     ({activities, selectActivity, selectedActivity, editMode, 
-        setEditMode, setSelectedActivity, createActivity, editActivity}) => {
+        setEditMode, setSelectedActivity, createActivity, editActivity, deleteActivity}) => {
     return (
         <Grid>
             <Grid.Column width={10}>
-                <ActivityList activities={activities} selectActivity={selectActivity} ></ActivityList>
+                <ActivityList activities={activities} 
+                selectActivity={selectActivity} 
+                deleteActivity={deleteActivity} ></ActivityList>
             </Grid.Column>
             <Grid.Column width={6}>
                 {selectedActivity && !editMode 

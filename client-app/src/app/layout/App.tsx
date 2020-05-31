@@ -33,6 +33,10 @@ const App: React.FC = () => {
     setEditMode(false);
   }
 
+  const handleDeleteActivity = (id: string) => {
+    setActivities(activities.filter(a => a.id !== id))
+  }
+
   useEffect(() => {
     axios.get<IActivity[]>('http://localhost:5000/api/activities')
         .then(response => {
@@ -57,7 +61,8 @@ const App: React.FC = () => {
           setEditMode = {setEditMode}
           setSelectedActivity={setSelectedActivity}
           createActivity={handleCreateActivity}
-          editActivity={handleEditActivity} />
+          editActivity={handleEditActivity}
+          deleteActivity={handleDeleteActivity} />
       </Container>
     </Fragment>
   );
