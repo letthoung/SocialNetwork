@@ -130,3 +130,7 @@ C:\Users\tle\Desktop\React+NetCore\api\obj\Debug\netcoreapp3.1\API.pdb
 C:\Users\tle\Desktop\React+NetCore\api\obj\Debug\netcoreapp3.1\API.genruntimeconfig.cache
 C:\Users\tle\Desktop\React+NetCore\API\bin\Debug\netcoreapp3.1\MediatR.dll
 C:\Users\tle\Desktop\React+NetCore\API\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Tung Le\Desktop\SocialNetwork\API\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\Users\Tung Le\Desktop\SocialNetwork\API\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Tung Le\Desktop\SocialNetwork\API\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Tung Le\Desktop\SocialNetwork\API\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll

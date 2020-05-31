@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tle\\Desktop\\React+NetCore\\Domain\\Domain.csproj": {}
+    "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tle\\Desktop\\React+NetCore\\Domain\\Domain.csproj": {
+    "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tle\\Desktop\\React+NetCore\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\tle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Tung Le\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tung Le\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
