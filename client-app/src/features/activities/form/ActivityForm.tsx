@@ -53,7 +53,7 @@ export const ActivityForm: React.FC<IProps> = ({setEditMode, selectedActivity, c
             value={activity.description} onChange={handleInputChange} />
             <Form.Input name="category" placeholder="Category" 
             value={activity.category} onChange={handleInputChange} />
-            <Form.Input name="date" type='date' placeholder="Date" 
+            <Form.Input name="date" type='datetime-local' placeholder="Date" 
             value={activity.date} onChange={handleInputChange} />
             <Form.Input name="city" placeholder="City" 
             value={activity.city} onChange={handleInputChange} />
