@@ -2,18 +2,18 @@ import React, { useState, useEffect, Fragment, SyntheticEvent, useContext } from
 import { Container } from 'semantic-ui-react';
 import { IActivity } from '../models/activity';
 import { NavBar } from '../../features/nav/NavBar';
-import { ActivitiesDashboard } from '../../features/activities/dashboard/ActivitiesDashboard';
+import ActivitiesDashboard from '../../features/activities/dashboard/ActivitiesDashboard';
 import agent from '../api/agent';
 import './styles.css';
 import { LoadingComponent } from './LoadingComponent';
 import  ActivityStore from '../stores/activityStore';
+import { observer } from 'mobx-react-lite';
 
 const App: React.FC = () => {
-  const {title} = useContext(ActivityStore);
+  const activityStore = useContext(ActivityStore);
   const [activities, setActivities] = useState<IActivity[]>([]);
   const [selectedActivity, setSelectedActivity] = useState<IActivity | null>(null);
   const [editMode, setEditMode] = useState<boolean>(false);
-  const [loading, setLoading] = useState<boolean>(true);
   const [submitting, setSubmitting] = useState<boolean>(false);
   const [target, setTarget] = useState<string>('');
 
@@ -54,30 +54,18 @@ const App: React.FC = () => {
   }
 
   useEffect(() => {
-    agent.Activities.list()
-        .then(response => {
-          let activities: IActivity[] = [];
-          response.forEach(activity => {
-            activity.date = activity.date.split('.')[0];
-            activities.push(activity)
-          })
-          setActivities(activities);
-        })
-        .then(() => setLoading(false))
-  }, []);
+    activityStore.loadActivities();
+  }, [activityStore]);
 
-  if (loading) return <LoadingComponent inverted={true} content='Loading activities...' />
+  if (activityStore.loadingInitial) return <LoadingComponent inverted={true} content='Loading activities...' />
     
   return (
     <Fragment>
       <NavBar openCreateForm={handleCreateForm}/>
       <Container style={{marginTop: '7em'}}>
-        <h1>{title}</h1>
         <ActivitiesDashboard 
-          activities={activities} 
-          selectActivity={handleSelectActivity} 
+          activities={activityStore.activities} 
           selectedActivity={selectedActivity} 
-          editMode = {editMode}
           setEditMode = {setEditMode}
           setSelectedActivity={setSelectedActivity}
           createActivity={handleCreateActivity}
@@ -90,4 +78,4 @@ const App: React.FC = () => {
   );
 }
 
-export default App;
+export default observer(App);
