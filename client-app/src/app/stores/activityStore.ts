@@ -5,7 +5,7 @@ import agent from '../api/agent';
 
 class ActivityStore {
     @observable activities: IActivity[] = [];
-    @observable selectedActivities: IActivity | undefined;
+    @observable selectedActivity: IActivity | undefined;
     @observable loadingInitial: boolean = false;
     @observable editMode = false;
     
@@ -15,12 +15,13 @@ class ActivityStore {
         .then(activities => activities.forEach(activity => {
             activity.date = activity.date.split('.')[0];
             this.activities.push(activity)
-          }))
+        }))
+        .catch(error => console.log(error))
         .finally(() => this.loadingInitial = false)
     }
 
     @action selectActivity = (id: string) => {
-        this.selectedActivities = this.activities.find(activity => activity.id === id);
+        this.selectedActivity = this.activities.find(activity => activity.id === id);
         this.editMode = false;
     }
 }

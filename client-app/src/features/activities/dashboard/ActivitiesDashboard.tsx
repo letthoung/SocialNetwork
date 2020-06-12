@@ -2,14 +2,13 @@ import React, { SyntheticEvent, useContext } from 'react';
 import { Grid } from 'semantic-ui-react';
 import { IActivity } from '../../../app/models/activity';
 import ActivityList from './ActivityList';
-import { ActivityDetails } from '../details/ActivityDetails';
+import ActivityDetails from '../details/ActivityDetails';
 import { ActivityForm } from '../form/ActivityForm';
 import { observer } from 'mobx-react-lite';
 import ActivityStore from '../../../app/stores/activityStore';
 
 interface IProps {
     activities: IActivity[],
-    selectedActivity: IActivity | null,
     setEditMode: (editMode: boolean) => void,
     setSelectedActivity: (selectedActivity: IActivity | null) => void,
     createActivity: (activity: IActivity) => void,
@@ -20,16 +19,15 @@ interface IProps {
 }
 
 const ActivitiesDashboard: React.FC<IProps> = 
-    ({activities, selectedActivity, setSelectedActivity,
+    ({activities, setSelectedActivity,
         setEditMode, createActivity, editActivity, deleteActivity, submitting, target}) => {
     
-    const { editMode, selectActivity} = useContext(ActivityStore);
+    const { selectedActivity, editMode } = useContext(ActivityStore);
     return (
         <Grid>
             <Grid.Column width={10}>
-                <ActivityList activities={activities}
+                <ActivityList
                 submitting={submitting} 
-                selectActivity={selectActivity} 
                 deleteActivity={deleteActivity}
                 target={target} />
             </Grid.Column>
@@ -37,7 +35,6 @@ const ActivitiesDashboard: React.FC<IProps> =
                 {selectedActivity && !editMode 
                     && <ActivityDetails 
                         setEditMode={setEditMode} 
-                        selectedActivity={selectedActivity}
                         setSelectedActivity={setSelectedActivity} />}
                 {editMode 
                 && <ActivityForm key={(selectedActivity && selectedActivity.id) || 0} setEditMode={setEditMode} selectedActivity={selectedActivity!} 

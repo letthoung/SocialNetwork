@@ -65,7 +65,6 @@ const App: React.FC = () => {
       <Container style={{marginTop: '7em'}}>
         <ActivitiesDashboard 
           activities={activityStore.activities} 
-          selectedActivity={selectedActivity} 
           setEditMode = {setEditMode}
           setSelectedActivity={setSelectedActivity}
           createActivity={handleCreateActivity}
