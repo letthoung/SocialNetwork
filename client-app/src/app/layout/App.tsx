@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Fragment, SyntheticEvent, useContext } from 'react';
 import { Container } from 'semantic-ui-react';
 import { IActivity } from '../models/activity';
-import { NavBar } from '../../features/nav/NavBar';
+import NavBar from '../../features/nav/NavBar';
 import ActivitiesDashboard from '../../features/activities/dashboard/ActivitiesDashboard';
 import agent from '../api/agent';
 import './styles.css';
@@ -16,25 +16,6 @@ const App: React.FC = () => {
   const [editMode, setEditMode] = useState<boolean>(false);
   const [submitting, setSubmitting] = useState<boolean>(false);
   const [target, setTarget] = useState<string>('');
-
-  const handleSelectActivity = (id: string) => {
-    setSelectedActivity(activities.filter(a => a.id === id)[0]);
-    setEditMode(false);
-  }
-
-  const handleCreateForm = () => {
-    setSelectedActivity(null);
-    setEditMode(true);
-  }
-
-  const handleCreateActivity = (activity: IActivity) => {
-    setSubmitting(true);
-    agent.Activities.create(activity).then(() =>{
-      setActivities([...activities, activity]);
-      setEditMode(false);
-      setSelectedActivity(activity);
-    }).then(() => setSubmitting(false))
-  }
 
   const handleEditActivity = (activity: IActivity) => {
     setSubmitting(true);
@@ -61,13 +42,12 @@ const App: React.FC = () => {
     
   return (
     <Fragment>
-      <NavBar openCreateForm={handleCreateForm}/>
+      <NavBar />
       <Container style={{marginTop: '7em'}}>
         <ActivitiesDashboard 
           activities={activityStore.activities} 
           setEditMode = {setEditMode}
           setSelectedActivity={setSelectedActivity}
-          createActivity={handleCreateActivity}
           editActivity={handleEditActivity}
           deleteActivity={handleDeleteActivity} 
           submitting={submitting}
