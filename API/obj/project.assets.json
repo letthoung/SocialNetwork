@@ -1254,19 +1254,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tung Le\\.nuget\\packages\\": {}
+    "C:\\Users\\tle\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\tle\\Desktop\\React+NetCore\\api\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\Tung Le\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\API\\obj\\",
+      "projectPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\api\\API.csproj",
+      "packagesPath": "C:\\Users\\tle\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tung Le\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tle\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1279,11 +1279,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Application\\Application.csproj"
+            "C:\\Users\\tle\\Desktop\\React+NetCore\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\Application\\Application.csproj"
             },
-            "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Tung Le\\Desktop\\SocialNetwork\\Domain\\Domain.csproj"
+            "C:\\Users\\tle\\Desktop\\React+NetCore\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\tle\\Desktop\\React+NetCore\\Domain\\Domain.csproj"
             }
           }
         }

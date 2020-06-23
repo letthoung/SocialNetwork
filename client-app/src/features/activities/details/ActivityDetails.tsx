@@ -1,32 +1,30 @@
 import React, { useContext } from 'react';
 import { Card, Image, Button } from 'semantic-ui-react';
-import { IActivity } from '../../../app/models/activity';
 import { observer } from 'mobx-react-lite';
 import ActivityStore from '../../../app/stores/activityStore';
 
 interface IProps {
-    setEditMode: (editMode: boolean) => void,
-    setSelectedActivity: (selectedActivity: IActivity | null) => void
+    
 }
 
-const ActivityDetails: React.FC<IProps> = ({ setEditMode, setSelectedActivity}) => {
-    const { selectedActivity } = useContext(ActivityStore);
+const ActivityDetails: React.FC<IProps> = () => {
+    const { selectedActivity: activity, openEditForm, cancelSelectedActivity } = useContext(ActivityStore);
     return (
         <Card fluid>
-            <Image src={`/assets/categoryImages/${selectedActivity!.category}.jpg`} wrapped ui={false} />
+            <Image src={`/assets/categoryImages/${activity!.category}.jpg`} wrapped ui={false} />
             <Card.Content>
-            <Card.Header>{selectedActivity!.title}</Card.Header>
+            <Card.Header>{activity!.title}</Card.Header>
             <Card.Meta>
-                <span>{selectedActivity!.date}</span>
+                <span>{activity!.date}</span>
             </Card.Meta>
             <Card.Description>
-                {selectedActivity!.description}
+                {activity!.description}
             </Card.Description>
             </Card.Content>
             <Card.Content extra>
                 <Button.Group widths={2}>
-                    <Button basic color="blue" content="Edit" onClick={() => setEditMode(true)} />
-                    <Button basic color="grey" content="Cancel" onClick={() => setSelectedActivity(null)} />
+                    <Button basic color="blue" content="Edit" onClick={() => openEditForm(activity!.id)} />
+                    <Button basic color="grey" content="Cancel" onClick={cancelSelectedActivity} />
                 </Button.Group>
             </Card.Content>
         </Card>
