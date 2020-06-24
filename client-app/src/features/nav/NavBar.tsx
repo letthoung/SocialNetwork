@@ -14,7 +14,7 @@ const NavBar: React.FC<IProps> = () => {
             <Container>
                 <Menu.Item header>
                     <img src="/assets/logo.png" alt="logo" style={{marginRight: '10px'}} />
-                    Rectivities
+                    Reactivities
                 </Menu.Item>
                 <Menu.Item name='Activities' />
                 <Menu.Item>
