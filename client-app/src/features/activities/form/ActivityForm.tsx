@@ -1,19 +1,25 @@
-import React, {useState, FormEvent, useContext} from 'react';
+import React, { FormEvent, useContext, useEffect} from 'react';
 import { Segment, Form, Button } from 'semantic-ui-react';
-import { IActivity } from '../../../app/models/activity';
 import { v4 as uuid} from 'uuid';
 import ActivityStore from '../../../app/stores/activityStore';
 import { observer } from 'mobx-react-lite';
+import { RouteComponentProps } from 'react-router-dom';
 
 
-interface IProps {
+interface IProps extends RouteComponentProps<FormParams> {
+
 }
 
-const ActivityForm: React.FC<IProps> = () => {
-    const { createActivity, editActivity, submitting, cancelFormOpen, selectedActivity } = useContext(ActivityStore);
-    const initializeForm = () => {
-        if(selectedActivity){
-            return selectedActivity;
+interface FormParams {
+    id: string
+}
+
+const ActivityForm: React.FC<IProps> = ({ match, history }) => {
+    const { createActivity, editActivity, submitting, clearActivity,
+        activity, setSelectedActivity, loadActivity } = useContext(ActivityStore);
+    const tempActivity = (() => {
+        if(activity !== null){
+            return activity;
         } else {
             return {
                 id: '',
@@ -25,21 +31,35 @@ const ActivityForm: React.FC<IProps> = () => {
                 venue: ''
             }
         }
-    };
+    })();
 
-    const [activity, setActivity] = useState<IActivity>(initializeForm());
+    useEffect(() => {
+        setSelectedActivity(tempActivity);
+        if (match.params.id)
+            loadActivity(match.params.id);
+        return () => {
+            clearActivity();
+        }
+    }, [loadActivity, clearActivity, match.params.id, setSelectedActivity, tempActivity]);
  
     const handleInputChange = (event: FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        console.log("Here");
         const {name, value} = event.currentTarget;
-        setActivity({...activity, [name]: value})
+        if (activity) {
+            const temp = {...activity, [name]: value};
+            setSelectedActivity(temp);
+        }
     }
 
     const handleSubmit = () => {
-        if (activity.id.length === 0){
-            let newActivity = {...activity, id: uuid()};
-            createActivity(newActivity);
+        if (activity!.id.length === 0){
+            if (activity) {
+                let newActivity = {...activity, id: uuid()};
+                createActivity(newActivity).then(() => history.push(`/activities/${newActivity.id}`));
+            }
         } else {
-            editActivity(activity);
+            if (activity)
+                editActivity(activity).then(() => history.push(`/activities/${activity.id}`));
         }
     }
 
@@ -47,21 +67,21 @@ const ActivityForm: React.FC<IProps> = () => {
     <Segment clearing>
         <Form onSubmit={() => handleSubmit()}>
             <Form.Input name="title" placeholder="Title" 
-            value={activity.title} onChange={handleInputChange} />
+            value={activity!.title} onChange={handleInputChange} />
             <Form.TextArea name="description" rows={2} placeholder="Description" 
-            value={activity.description} onChange={handleInputChange} />
+            value={activity!.description} onChange={handleInputChange} />
             <Form.Input name="category" placeholder="Category" 
-            value={activity.category} onChange={handleInputChange} />
+            value={activity!.category} onChange={handleInputChange} />
             <Form.Input name="date" type='datetime-local' placeholder="Date" 
-            value={activity.date} onChange={handleInputChange} />
+            value={activity!.date} onChange={handleInputChange} />
             <Form.Input name="city" placeholder="City" 
-            value={activity.city} onChange={handleInputChange} />
+            value={activity!.city} onChange={handleInputChange} />
             <Form.Input name="venue" placeholder="Venue" 
-            value={activity.venue} onChange={handleInputChange} />
+            value={activity!.venue} onChange={handleInputChange} />
             <Button loading={submitting} floated='right' positive type="submit" 
             content="Submit" />
             <Button floated='right' type="button" content="Cancel" 
-            onClick={cancelFormOpen} />
+            onClick={() => history.push('/activities')} />
         </Form>
     </Segment>
     )
